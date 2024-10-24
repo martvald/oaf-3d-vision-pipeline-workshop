@@ -20,8 +20,9 @@ exclude_patterns:
   - "ENV"
 thebe:
   activate: true
-  binderhub_url: "https://mybinder.org"
-  repository_url: "https://github.com/martvald/oaf-3d-vision-pipeline-workshop"
-  branch: "main"
+  binder:
+    url: "https://mybinder.org"
+    repo: "martvald/oaf-3d-vision-pipeline-workshop"
+    ref: "test-thebe"
 launch_buttons:
     thebe: true
