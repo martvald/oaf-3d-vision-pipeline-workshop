@@ -1,0 +1,51 @@
+[GLOBAL]
+pants_version = "2.25.0"
+backend_packages = [
+    "pants.backend.build_files.fmt.black",
+    "pants.backend.python",
+    "pants.backend.python.lint.autoflake",
+    "pants.backend.python.lint.black",
+    "pants.backend.python.lint.flake8",
+    "pants.backend.python.lint.isort",
+    "pants.backend.python.lint.pylint",
+    "pants.backend.python.typecheck.mypy",
+    "pants.backend.experimental.python",
+    "pants.backend.experimental.python.typecheck.pyright",
+]
+
+[autoflake]
+install_from_resolve = "default"
+
+[black]
+install_from_resolve = "default"
+
+[flake8]
+install_from_resolve = "default"
+
+[mypy]
+install_from_resolve = "default"
+
+[pylint]
+install_from_resolve = "default"
+
+[pyright]
+version = "pyright@1.1.400" # TODO: Lock pyright version better
+
+[pytest]
+install_from_resolve = "default"
+
+
+[python]
+enable_resolves = "true"
+default_resolve = "default"
+interpreter_constraints = ["CPython==3.11.*"]
+interpreter_versions_universe = ["3.11"]
+
+[python.resolves]
+default = "third_party/python/default.lock"
+
+[source]
+root_patterns = ["/"]
+
+[export]
+py_editable_in_resolve = ["default"]

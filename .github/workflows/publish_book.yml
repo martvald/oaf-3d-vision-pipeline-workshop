@@ -1,0 +1,46 @@
+name: Publish Website
+on: 
+  push:
+    branches:
+      - main
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    name: Publish Jupyter Book
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+      with:
+        lfs: true
+        fetch-depth: 0
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Initialize Pants
+      uses: pantsbuild/actions/init-pants@v10
+
+    - name: Build Jupyter Book
+      run: pants run docs:build_docs
+
+    - name: Upload Jupyter Book
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: _build/html
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+      with:
+        enablement: true
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4

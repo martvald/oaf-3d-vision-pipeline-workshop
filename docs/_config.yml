@@ -1,0 +1,20 @@
+title: OAF Workshop
+only_build_toc_files: true
+execute:
+    execute_notebooks: cache
+    timeout: 120
+jupyter_cache:
+  enable: true
+sphinx:
+    config:
+        nb_custom_formats:
+            .py:
+                - jupytext.reads
+                - fmt: py:percent
+        suppress_warnings:
+            - ref.myst
+            - mystnb.unknown_mime_type
+exclude_patterns:
+  - "dist"
+  - ".pytest_cache"
+  - "**/.pytest_cache"

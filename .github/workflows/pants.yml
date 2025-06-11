@@ -1,0 +1,49 @@
+name: Pants
+on: [push, workflow_dispatch]
+jobs:
+  pants:
+    name: Perform CI Checks
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+      with:
+        lfs: true
+        fetch-depth: 0
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Initialize Pants
+      uses: pantsbuild/actions/init-pants@v9
+
+    - name: Check Build Files and Lint
+      run: |
+        pants \
+        tailor --check \
+        update-build-files --check \
+        lint ::
+
+    - name: Run Type Checks
+      run: |
+        pants \
+        --changed-dependents=transitive \
+        check ::
+
+    - name: Run Tests
+      run: |
+        pants \
+        --changed-dependents=transitive \
+        test ::
+
+    - name: Build Jupyter Book
+      run: pants run docs:build_docs
+
+    - name: Upload Jupyter Book
+      uses: actions/upload-artifact@v4
+      with:
+        name: jupyter-book
+        path: _build/html
+
