@@ -1,0 +1,18 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.11.13" }
+  },
+  "onCreateCommand": "./.devcontainer/setup_pants.sh",
+  "settings": {
+    "python.defaultInterpreterPath": "dist/export/python/virtualenvs/default/3.11.13/bin/python"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}

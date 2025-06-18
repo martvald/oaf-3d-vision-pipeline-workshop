@@ -44,7 +44,7 @@ To publish the website, we need to use the GitHub Actions workflow in the reposi
 
 Now everything is set up for you to make changes to the repository and publish them. The forked repo has some paths that should be updated so the links work correctly. To do this, follow the steps below:
 
-#### a. Set Up the Repository Locally
+#### a1. Set Up the Repository Locally
 
 ````{margin}
 ```{warning}
@@ -67,6 +67,12 @@ are the locations I use personally:
     ```bash
     git checkout -b workshop-delivery
     ```
+
+#### a2. Set up the repository in the Codespaces
+
+1. Open the repository on github.com
+2. Click the **`Code`** button and select **`Create codespace on {branch}`**
+3. Wait for the container to be created and the environment to be set up
 
 #### b. Update Repository Links
 
@@ -214,7 +220,13 @@ set PYTHONPATH=%PYTHONPATH%;$(pwd)     # Windows
 ````
 `````
 
-### 4. Open editor at repo root in the virtual environment:
+### Open the repository in the Codespaces
+
+1. Open the repository on github.com
+2. Click the **`Code`** button and select **`Create codespace on {branch}`** or select an existing codespace
+3. Wait for the container to be created and the environment to be set up
+
+### Open editor at repo root in the virtual environment
 
 For these workshops, I will use the free Visual Studio Code (VS Code), a popular
 code editor from Microsoft that offers a wide range of plugins and features. I
