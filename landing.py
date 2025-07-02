@@ -7,7 +7,7 @@
 #
 # ## Overview
 #
-# This [repository](https://github.com/martvald/oaf-3d-vision-pipeline-workshop)
+# This [repository](https://github.com/hariomshahu/oaf-3d-vision-pipeline-workshop\)
 # contains materials for an 8-week workshop series that will introduce you to the
 # fascinating world of 3D computer vision. Whether you're a beginner or have some
 # programming experience, this course will help you understand and implement key
@@ -15,7 +15,7 @@
 #
 # ## Deliverables
 #
-# The following [workshop website](https://martvald.github.io/oaf-3d-vision-pipeline-workshop/)
+# The following [workshop website](https://hariomshahu.github.io/oaf-3d-vision-pipeline-workshop/)
 # is my deliverable for this project. Each participant will create their own fork of
 # the repository and host their own version of the website.
 
