@@ -15,7 +15,7 @@
 #
 # ## Deliverables
 #
-# The following [workshop website](https://hariomshahu.github.io/oaf-3d-vision-pipeline-workshop/)
+# The following [workshop website](https://hariomshahu.github.io/oaf-3d-vision-pipeline-workshop\)
 # is my deliverable for this project. Each participant will create their own fork of
 # the repository and host their own version of the website.
 
