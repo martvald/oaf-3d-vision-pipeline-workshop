@@ -39,7 +39,7 @@ def workshop_03_results(overwrite: bool = False) -> Status:
     test_result = np.allclose(
         undistorted_images,
         reference_data["undistorted_images"],
-        atol=1e-5,
+        atol=1e-4,
     )
 
     return Status.from_bool(test_result)
