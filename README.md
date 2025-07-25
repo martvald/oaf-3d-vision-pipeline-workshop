@@ -4,7 +4,7 @@ Welcome to the "Pixel to Point Cloud" workshop repository! This project is desig
 
 ## Deliverables
 
-The following [workshop website](https://martvald.github.io/oaf-3d-vision-pipeline-workshop/) is my deliverable for this project. Each participant will create their own fork of the repository and host their own version of the website.
+The following [workshop website](https://PSKWak.github.io/3d-vision-pipeline) is my deliverable for this project. Each participant will create their own fork of the repository and host their own version of the website.
 
 ## Workshop Schedule
 
@@ -26,3 +26,7 @@ We welcome contributions and suggestions! Please open an issue or submit a pull 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Happy learning, and enjoy your journey into the world of 3D vision!
+
+
+
+
