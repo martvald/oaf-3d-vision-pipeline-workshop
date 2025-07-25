@@ -4,7 +4,7 @@ Welcome to the "Pixel to Point Cloud" workshop repository! This project is desig
 
 ## Deliverables
 
-The following [workshop website](https://PSKWak.github.io/3d-vision-pipeline) is my deliverable for this project. Each participant will create their own fork of the repository and host their own version of the website.
+The following [workshop website](https://PSKWak.github.io/3d-vision-pipeline/) is my deliverable for this project. Each participant will create their own fork of the repository and host their own version of the website.
 
 ## Workshop Schedule
 

@@ -8,7 +8,7 @@ To host the website yourself you have to follow the instuctions below. As we go 
 
 This step will create a copy of the repository in your GitHub account:
 
-1. Navigate to the [repository](https://github.com/martvald/oaf-3d-vision-pipeline-workshop).
+1. Navigate to the [repository](https://github.com/PSKWak/3d-vision-pipeline).
 2. Click the **`Fork`** button in the top-right corner of the page.
 3. Enter a name for your forked repository (e.g., `pixel-to-point-cloud`) and optionally add a description.
 
@@ -26,7 +26,7 @@ We need to set up GitHub Pages for your forked repository to host the website:
 4. (Optional) Set up a custom domain. By default, your site will be available at:
 
     ```bash
-    https://<your-username>.github.io/<your-repo-name>/
+    https://PSKWak.github.io/3d-vision-pipeline/
     ```
 
     ![Configure GitHub Pages](../test_data/forking/configure_github_pages.png)
@@ -83,13 +83,13 @@ are the locations I use personally:
       Replace the link to the original site:
 
       ```markdown
-      https://martvald.github.io/oaf-3d-vision-pipeline-workshop/
+      https://PSKWak.github.io/3d-vision-pipeline/
       ```
 
       with your GitHub Pages link:
 
       ```markdown
-      https://<your-username>.github.io/<your-repo-name>/
+      https://PSKWak.github.io/3d-vision-pipeline/
       ```
 
    - `landing.py`:
