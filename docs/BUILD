@@ -7,6 +7,7 @@ python_source(
     dependencies=[
         "//:root",
         "//oaf_vision_3d",
+        "//oaf_vision_3d/s2m2_implementation",
         "//third_party/python:reqs",
         "//:markdowns",
         "//test_data:test_data_files",

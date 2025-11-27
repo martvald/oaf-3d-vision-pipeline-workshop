@@ -48,7 +48,7 @@ def _get_all_ignores_book_files() -> list[Path]:
 
     files = []
     for line in lines:
-        globbed_files = _get_repo_path().rglob(line.strip())
+        globbed_files = _get_repo_path().glob(line.strip())
         for globbed_file in globbed_files:
             files.append(globbed_file.parent / globbed_file.stem)
 

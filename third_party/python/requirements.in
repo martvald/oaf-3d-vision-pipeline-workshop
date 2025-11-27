@@ -11,8 +11,9 @@ mypy
 nptyping
 numpy
 open3d
-opencv-python
+opencv-python-headless
 pylint
 pyright
 pytest
 scipy
+torch

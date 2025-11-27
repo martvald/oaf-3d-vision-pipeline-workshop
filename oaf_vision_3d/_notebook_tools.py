@@ -6,7 +6,6 @@ from nptyping import Float32, NDArray, Shape
 
 
 def is_in_jupyter_build() -> bool:
-    print(os.environ.get("JUPYTER_BOOK_BUILD", "Does not exist"))
     if "JUPYTER_BOOK_BUILD" in os.environ:
         return True
     return False
