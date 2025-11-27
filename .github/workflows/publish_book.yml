@@ -21,6 +21,16 @@ jobs:
         lfs: true
         fetch-depth: 0
 
+    - name: Free disk space
+      uses: jlumbroso/free-disk-space@main
+      with:
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        tool-cache: true
+
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
@@ -30,7 +40,7 @@ jobs:
       uses: pantsbuild/actions/init-pants@v10
 
     - name: Build Jupyter Book
-      run: pants run docs:build_docs
+      run: pants --no-pantsd run docs:build_docs
 
     - name: Upload Jupyter Book
       uses: actions/upload-pages-artifact@v3
