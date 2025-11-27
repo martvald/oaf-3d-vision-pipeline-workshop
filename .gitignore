@@ -167,3 +167,6 @@ _build/
 # Pants workspace files
 /.pants.d
 /dist/
+
+# Pretrained models
+pretrained_models/

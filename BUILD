@@ -1,4 +1,6 @@
-python_sources(name="root")
+python_requirement(name="setuptools", requirements=["setuptools==80.9.0"])
+
+python_sources(name="root", dependencies=[":setuptools"])
 
 python_distribution(
     name="dist",

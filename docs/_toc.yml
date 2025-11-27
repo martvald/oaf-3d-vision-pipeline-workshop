@@ -12,6 +12,7 @@ chapters:
   - file: workshops/06_stereo_matching_fundamentals
   - file: workshops/07_stereo_matching_fundamentals_continued
   - file: workshops/08_building_your_3d_vision_pipeline
+  - file: workshops/09_using_sota_ai_matching
 - file: oaf_vision_3d/module
   sections:
   - file: oaf_vision_3d/lens_model
@@ -25,3 +26,8 @@ chapters:
   - file: oaf_vision_3d/poly_2_subvalue_fit
   - file: oaf_vision_3d/point_cloud_visualization
   - file: oaf_vision_3d/convolve2d
+- file: oaf_vision_3d/s2m2_implementation/s2m2
+  sections:
+  - file: oaf_vision_3d/s2m2_implementation/README
+  - file: oaf_vision_3d/s2m2_implementation/LICENSE
+  - file: oaf_vision_3d/s2m2_implementation/pretrained_paths
